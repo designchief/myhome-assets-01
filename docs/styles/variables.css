@@ -1,0 +1,100 @@
+/* swatch variables */
+:root {
+    --swatch-dark-1: #1C1D1F;
+    --swatch-dark-2: #292C2E;
+    --swatch-dark-3: #3A3D40;
+    --swatch-light-1: #FFFFFF;
+    --swatch-light-2: #F2F5F7;
+    --swatch-light-3: #E1E3E5;
+    --swatch-medium: #8897A6;
+	
+    --swatch-brand-100: #DCEBF8;
+    --swatch-brand-200: #BCDBF9;
+    --swatch-brand-300: #86C1FB;
+    --swatch-brand-400: #50A6FD;
+    --swatch-brand-500: #1A8CFF;
+    --swatch-brand-600: #1A70C7;
+    --swatch-brand-700: #1B558F;
+    --swatch-brand-800: #1B3957;
+    --swatch-brand-900: #1C2835;
+
+    --swatch-accent-green: #9DC443;
+    --swatch-accent-purple: #BEAEC4;
+    --swatch-accent-red: #EB7846;
+    --swatch-accent-turquoise: #41C4CC;
+    --swatch-accent-peach: #FFB399; 
+    --swatch-accent-pink: #FF99BF; 
+    --swatch-accent-light-orange: #FBBE5E; 
+    
+    --swatch-transparent: rgba(255,255,255,0);
+
+}
+ 
+/* theme variables for use in styles */
+:root {
+    --theme-background: var(--swatch-light-2);
+    --theme-background-2: var(--swatch-light-1);
+    --theme-text: var(--swatch-dark-3);
+    --theme-text-2: var(--swatch-dark-1);
+
+    --theme-medium: var(--swatch-medium);
+    --theme-medium-2: color-mix(in srgb, var(--swatch-medium) 75%, transparent);
+    --theme-medium-3: color-mix(in srgb, var(--swatch-medium) 50%, transparent);
+    --theme-medium-4: color-mix(in srgb, var(--swatch-medium) 25%, transparent);
+    --theme-border: var(--theme-medium-4);
+
+	--theme-brand-main: var(--swatch-brand-500);
+    --theme-brand-shade-1: var(--swatch-brand-100);
+    --theme-brand-shade-2: var(--swatch-brand-200);
+    --theme-brand-shade-3: var(--swatch-brand-300);
+    --theme-brand-shade-4: var(--swatch-brand-400);
+    --theme-brand-opactiy-1: color-mix(in srgb, var(--swatch-brand-500) 10%, transparent);
+    --theme-brand-opactiy-2: color-mix(in srgb, var(--swatch-brand-500) 25%, transparent);
+    --theme-brand-opactiy-3: color-mix(in srgb, var(--swatch-brand-500) 50%, transparent);
+    --theme-brand-opactiy-4: color-mix(in srgb, var(--swatch-brand-500) 75%, transparent);
+    --theme-brand-text: var(--swatch-light-1);
+
+    --theme-button-primary-background-hover: var(--swatch-dark-2);
+    --theme-button-primary-background: var(--swatch-brand-500);
+    --theme-button-primary-border-hover: var(--swatch-dark-2);
+    --theme-button-primary-border: var(--swatch-brand-500);
+    --theme-button-primary-text-hover: var(--swatch-light-1);
+    --theme-button-primary-text: var(--swatch-brand-text);
+
+    --theme-button-secondary-background-hover: var(--swatch-dark-2);
+    --theme-button-secondary-background: var(--swatch-transparent);
+    --theme-button-secondary-border-hover: var(--swatch-dark-2);
+    --theme-button-secondary-border: var(--swatch-brand-500);
+    --theme-button-secondary-text-hover: var(--swatch-light-1);
+    --theme-button-secondary-text: var(--swatch-brand-500);
+
+    --theme-navbar-background: color-mix(in srgb, var(--swatch-light-1) 90%, transparent);
+
+    --theme-process-alert: var(--swatch-accent-red);
+    --theme-process-alert-fade: color-mix(in srgb, var(--swatch-accent-red) 25%, transparent);
+    --theme-process-success: var(--swatch-accent-green);
+    --theme-process-success-fade: color-mix(in srgb, var(--swatch-accent-green) 25%, transparent);
+    
+}
+
+/* size variables */
+:root {
+    --icon-stroke-width--main: 1.5px;
+    
+    --border-radius-main: 1rem; /* tablet .875rem - mobile .75rem */ 
+    --border-radius-small: .5rem; /* mobile .375rem */
+    --border-radius-round: 100vw;
+
+}
+
+/* elements styled with theme variables */
+body {
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+}
+
+/* sample svg icon setup for consistent stroke icons */
+.icon svg * {
+    vector-effect: non-scaling-stroke;
+    stroke-width: var(--icon-stroke-width--main);
+}
